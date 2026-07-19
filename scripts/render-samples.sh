@@ -18,5 +18,5 @@ PANGRAM="نص حكيم له سر قاطع وذو شأن عظيم مكتوب عل
 "$BUILD/glyph_table" > "$BUILD/table.pgm"
 swift tools/ComposePng.swift "$BUILD/table.pgm" "$OUT/alphabet-table.png" 5
 
-"$BUILD/render_line" "$PANGRAM" > "$BUILD/pangram.pgm"
-swift tools/ComposePng.swift "$BUILD/pangram.pgm" "$OUT/pangram.png" 4
+"$BUILD/render_line" "$PANGRAM" 340 > "$BUILD/pangram.pgm"
+swift tools/ComposePng.swift "$BUILD/pangram.pgm" "$OUT/pangram.png" 5

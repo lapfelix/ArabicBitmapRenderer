@@ -10,7 +10,7 @@
 #include "ArabicRenderer.h"
 #include "generated/NaskhArabic28Font.h"
 
-enum { CELL_W = 48, CELL_GAP = 6, GROUP_GAP = 18, GROUPS = 3 };
+enum { CELL_W = 36, CELL_GAP = 2, GROUP_GAP = 14, GROUPS = 3 };
 
 static const uint16_t letters[] = {
     0x0621, 0x0622, 0x0623, 0x0624, 0x0625, 0x0626, 0x0627, 0x0628, 0x0629,
@@ -43,7 +43,7 @@ int main(void) {
   const ArabicFont *f = &naskhArabic28Font;
   const int letterCount = (int)(sizeof letters / sizeof *letters);
   const int rowsPerGroup = (letterCount + GROUPS - 1) / GROUPS;
-  const int rowH = f->lineHeight + CELL_GAP;
+  const int rowH = f->lineHeight - 10;  // Naskh line box has generous slack
   const int groupW = 4 * CELL_W + GROUP_GAP;
   fbw = GROUPS * groupW - GROUP_GAP + 2 * CELL_GAP;
   fbh = rowsPerGroup * rowH + CELL_GAP;
