@@ -57,12 +57,22 @@ let variedDescriptor = CTFontDescriptorCreateCopyWithAttributes(
     [kCTFontVariationAttribute: [NSNumber(value: wghtTag): weight]] as CFDictionary)
 let font = CTFontCreateWithFontDescriptor(variedDescriptor, CGFloat(size), nil)
 
-if let variation = CTFontCopyVariation(font) as? [NSNumber: NSNumber] {
+let axes = CTFontCopyVariationAxes(baseFont) as? [[String: Any]] ?? []
+guard let wghtAxis = axes.first(where: { ($0[kCTFontVariationAxisIdentifierKey as String] as? Int) == wghtTag }) else {
+    fail("font has no wght axis; is it the variable TTF?")
+}
+let wghtMin = (wghtAxis[kCTFontVariationAxisMinimumValueKey as String] as? Double) ?? 0
+let wghtMax = (wghtAxis[kCTFontVariationAxisMaximumValueKey as String] as? Double) ?? 0
+let wghtDefault = (wghtAxis[kCTFontVariationAxisDefaultValueKey as String] as? Double) ?? 0
+if weight < wghtMin || weight > wghtMax {
+    fail("wght \(weight) outside this font's axis range \(wghtMin)–\(wghtMax)")
+}
+// CTFontCopyVariation returns empty at the axis default, so only verify off-default weights.
+if abs(weight - wghtDefault) >= 0.5 {
+    let variation = CTFontCopyVariation(font) as? [NSNumber: NSNumber] ?? [:]
     guard let applied = variation[NSNumber(value: wghtTag)]?.doubleValue, abs(applied - weight) < 0.5 else {
         fail("wght variation not applied: \(variation)")
     }
-} else {
-    fail("font has no variation axes; is it the variable TTF?")
 }
 // Cross-check: the weight must actually change outlines vs the default instance.
 if abs(weight - 400) > 1 {

@@ -25,10 +25,18 @@
 
 #include "NewYork25Font.h"
 
+#ifndef NY_ROWS
 #define NY_ROWS 25
+#endif
+#ifndef FB_W
 #define FB_W 360
+#endif
+#ifndef FB_H
 #define FB_H 48
+#endif
+#ifndef SCALE
 #define SCALE 4
+#endif
 
 static uint8_t fb[FB_H][FB_W];  // 0 = blank, 1 = ink, 2 = guide
 
