@@ -132,7 +132,8 @@ final class PanelsView: NSView {
 
         NSGraphicsContext.current?.imageInterpolation = .none
         let nsImage = NSImage(cgImage: cg, size: NSSize(width: image.width, height: image.height))
-        nsImage.draw(in: rect, from: .zero, operation: .sourceOver, fraction: 1)
+        nsImage.draw(in: rect, from: .zero, operation: .sourceOver, fraction: 1,
+                     respectFlipped: true, hints: [.interpolation: NSImageInterpolation.none.rawValue])
 
         if showGrid && zoom >= 8 {
             NSColor(calibratedWhite: 0.5, alpha: 0.25).setStroke()
