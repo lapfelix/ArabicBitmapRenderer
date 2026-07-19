@@ -171,7 +171,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
     let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1100, height: 700),
                           styleMask: [.titled, .closable, .miniaturizable, .resizable],
                           backing: .buffered, defer: false)
-    let textField = NSTextField(string: "مرحبا بالعالم")
+    let textField = NSTextField(
+        string: UserDefaults.standard.string(forKey: "lastTestString") ?? "مرحبا بالعالم")
     let slider = NSSlider(value: 8, minValue: 4, maxValue: 16, target: nil, action: nil)
     let gridCheckbox = NSButton(checkboxWithTitle: "pixel grid", target: nil, action: nil)
     let panels = PanelsView()
@@ -237,6 +238,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
 
     func rerender() {
         let text = textField.stringValue
+        UserDefaults.standard.set(text, forKey: "lastTestString")
         let (bitmap, _) = renderBitmapPipeline(text)
         panels.bitmapImage = bitmap
         panels.vectorImage = renderCoreTextPipeline(text)
