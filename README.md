@@ -1,37 +1,44 @@
-<img width="1360" height="500" alt="arabic-hero" src="https://github.com/user-attachments/assets/ff899b7a-fbff-4929-8831-0bd013b4cce2" />
-<img width="2320" height="2290" alt="alphabet-table" src="https://github.com/user-attachments/assets/048f7cce-6dff-477a-a884-187dcef64bc7" />
-<img width="1580" height="720" alt="pangram" src="https://github.com/user-attachments/assets/60b42ef9-2d86-469f-ba3e-9887b7d8414d" />
-
-
 # ArabicBitmapRenderer
 
-Pre-cooked Arabic bitmap font rendering for tiny microcontrollers (RP2040-class),
-designed to slot into the `BitmapFont` rendering model used by PicoOled.
+<img alt="Hello, world — rendered by the bitmap pipeline" src="https://github.com/user-attachments/assets/ff899b7a-fbff-4929-8831-0bd013b4cce2" width="680" />
 
-- **Offline generator** (`tools/GenerateArabicFont.swift`): renders Noto Naskh
-  Arabic at a fixed pixel size and weight (e.g. 18 px @ wght 450) via CoreText
-  on macOS, emitting a compact C header — 1 bit/pixel packed bitmaps, tight
-  bounding boxes, integer advances/bearings.
-- **Runtime** (`src/`): C99, no allocation, no floats, no curve math.
-  - `ArabicShaper` — contextual shaping (isolated/initial/medial/final),
-    lam-alef ligatures, harakat handling, ZWJ/ZWNJ, bidi-lite run reordering
-    into visual order.
-  - `ArabicRenderer` — fast width measurement (one pass, sum of advances) and
-    scanline/framebuffer blitting.
+A small toolkit for rendering Arabic text on tiny microcontroller displays
+(RP2040-class). Glyphs are pre-rendered from [Noto Naskh
+Arabic](https://fonts.google.com/noto/specimen/Noto+Naskh+Arabic) on a Mac;
+the runtime is plain C99 with no allocation, no floats, and no curve math —
+just table lookups and bit-blitting.
 
-See `DESIGN.md` for the data format, API, and edge-case notes.
+- **Generator** (`tools/GenerateArabicFont.swift`) — CoreText renders each
+  contextual form at a fixed pixel size and weight, packed into a C header:
+  1 bit/pixel bitmaps, tight bounding boxes, integer advances. The full
+  alphabet in every form fits in a few KB of flash (~5.5 KB at 28 px).
+- **Shaper** (`src/ArabicShaper`) — isolated/initial/medial/final forms,
+  lam-alef ligatures, harakat, ZWJ/ZWNJ, and enough bidi to lay out mixed
+  RTL/LTR lines in visual order.
+- **Renderer** (`src/ArabicRenderer`) — one-pass width measurement and
+  scanline or framebuffer blitting, suited to row-streaming LCD drivers.
 
 ## Usage
 
 ```sh
 swift tools/GenerateArabicFont.swift \
   fonts/noto-naskh-arabic/NotoNaskhArabic-VariableFont_wght.ttf \
-  --size 18 --weight 450 --out src/generated
+  --size 28 --weight 400 --out src/generated
 ```
 
-Then compile `src/*.c` + the generated header into your firmware. Shape once
-per content change, reuse the shaped array every frame; measure with
-`arabicMeasureUtf8()` when laying out mixed RTL/LTR lines.
+Compile `src/*.c` plus the generated header into your firmware. Shape once
+per content change, reuse the shaped array every frame; use
+`arabicMeasureUtf8()` for quick layout decisions. `DESIGN.md` has the data
+format, API, and edge-case notes.
+
+## Samples
+
+Every letter in its contextual forms, and the classic Arabic pangram —
+both drawn by the actual runtime (`scripts/render-samples.sh` regenerates
+them):
+
+<img alt="Alphabet table: every letter in isolated, final, medial, and initial form" src="https://github.com/user-attachments/assets/048f7cce-6dff-477a-a884-187dcef64bc7" width="680" />
+<img alt="Arabic pangram rendered across three lines" src="https://github.com/user-attachments/assets/60b42ef9-2d86-469f-ba3e-9887b7d8414d" width="480" />
 
 ## Demo app
 
@@ -39,16 +46,15 @@ per content change, reuse the shaped array every frame; measure with
 cd demo && swift run
 ```
 
-macOS app (SwiftPM, AppKit) for judging inter-letter spacing and joins: type
-Arabic text and see the shaper + bitmap renderer output next to CoreText
-rendering the real vector font at the same 28px size, both zoomed
-nearest-neighbor (4x-16x) with a pixel grid and a red baseline guide.
+A little macOS app for eyeballing spacing and joins: type Arabic text and
+compare the bitmap pipeline against CoreText rendering the vector font at
+the same size, zoomed in with a pixel grid and baseline guide.
 
 ## License
 
 Code: MIT (see `LICENSE`).
 
-Font: Noto Naskh Arabic, © Google, licensed under the SIL Open Font License 1.1
-(`fonts/noto-naskh-arabic/OFL.txt`). Generated bitmap data is a derivative of
-the font and remains under the OFL; the license text must accompany any
-distribution that includes the generated glyph data.
+Font: Noto Naskh Arabic, © Google, under the SIL Open Font License 1.1
+(`fonts/noto-naskh-arabic/OFL.txt`). Generated bitmap data is derived from
+the font and remains under the OFL; keep the license text alongside any
+distribution of the glyph data.
