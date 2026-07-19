@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ArabicDemo-product' in project 'ArabicDemo'
+➜ Explicit dependency on target 'CArabicRuntime' in project 'ArabicDemo'
+Target 'CArabicRuntime' in project 'ArabicDemo' (no dependencies)

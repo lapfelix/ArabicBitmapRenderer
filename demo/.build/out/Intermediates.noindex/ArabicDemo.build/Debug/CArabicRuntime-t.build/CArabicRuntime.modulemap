@@ -1,0 +1,4 @@
+module CArabicRuntime {
+umbrella header "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h"
+export *
+}

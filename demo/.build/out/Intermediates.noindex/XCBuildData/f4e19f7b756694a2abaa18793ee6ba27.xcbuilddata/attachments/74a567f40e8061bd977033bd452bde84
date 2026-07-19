@@ -1,0 +1,4 @@
+module ArabicDemo {
+header "ArabicDemo-Swift.h"
+export *
+}

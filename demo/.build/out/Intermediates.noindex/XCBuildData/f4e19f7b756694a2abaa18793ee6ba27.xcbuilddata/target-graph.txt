@@ -1,0 +1,10 @@
+Target dependency graph (4 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'ArabicDemo-product' in project 'ArabicDemo'
+➜ Explicit dependency on target 'ArabicDemo' in project 'ArabicDemo'
+➜ Explicit dependency on target 'CArabicRuntime' in project 'ArabicDemo'
+Target 'ArabicDemo' in project 'ArabicDemo'
+➜ Explicit dependency on target 'CArabicRuntime' in project 'ArabicDemo'
+Target 'ArabicDemo-product' in project 'ArabicDemo'
+➜ Explicit dependency on target 'CArabicRuntime' in project 'ArabicDemo'
+Target 'CArabicRuntime' in project 'ArabicDemo' (no dependencies)

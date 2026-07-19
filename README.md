@@ -28,6 +28,17 @@ Then compile `src/*.c` + the generated header into your firmware. Shape once
 per content change, reuse the shaped array every frame; measure with
 `arabicMeasureUtf8()` when laying out mixed RTL/LTR lines.
 
+## Demo app
+
+```sh
+cd demo && swift run
+```
+
+macOS app (SwiftPM, AppKit) for judging inter-letter spacing and joins: type
+Arabic text and see the shaper + bitmap renderer output next to CoreText
+rendering the real vector font at the same 28px size, both zoomed
+nearest-neighbor (4x-16x) with a pixel grid and a red baseline guide.
+
 ## License
 
 Code: MIT (see `LICENSE`).

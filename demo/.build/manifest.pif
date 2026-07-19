@@ -1,0 +1,1329 @@
+[
+  {
+    "contents" : {
+      "guid" : "Workspace:/Users/felix/Gits/ArabicBitmapRenderer/demo",
+      "name" : "ArabicDemo",
+      "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo",
+      "projects" : [
+        "a24e3e0cee311bd8c752651e84539941c1e1a7c39ac381ade45dfc73eb1f839a",
+        "1bb7e26172efd0a5ca4a5980b97c7ff61fe3b6593f0f8b1125d66c8b56220a1a"
+      ]
+    },
+    "signature" : "5c8bca323c1006e5ad35a1dcf275db94221510718cef6580a17835fcfae6dbf3",
+    "type" : "workspace"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "CLANG_ENABLE_MODULES[__platform_filter=driverkit]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios-maccatalyst]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios;ios-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=macos]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=tvos;tvos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=watchos;watchos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=xros;xros-simulator]" : "YES",
+            "CODE_SIGNING_REQUIRED" : "NO",
+            "CODE_SIGN_IDENTITY" : "",
+            "COMPILER_WORKING_DIRECTORY" : "$(WORKSPACE_DIR)",
+            "COPY_PHASE_STRIP" : "NO",
+            "DEBUG_INFORMATION_FORMAT" : "dwarf",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=driverkit]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios-maccatalyst]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios;ios-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=macos]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=tvos;tvos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=watchos;watchos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=xros;xros-simulator]" : "@rpath",
+            "ENABLE_NS_ASSERTIONS" : "YES",
+            "ENABLE_TESTABILITY" : "YES",
+            "ENABLE_TESTING_SEARCH_PATHS" : "YES",
+            "ENTITLEMENTS_REQUIRED" : "NO",
+            "GCC_OPTIMIZATION_LEVEL" : "0",
+            "GCC_PREPROCESSOR_DEFINITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE",
+              "DEBUG=1"
+            ],
+            "INDEX_ENABLE_DATA_STORE" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "KEEP_PRIVATE_EXTERNS" : "NO",
+            "LIBTOOL_NO_WARNING_FOR_NO_SYMBOLS" : "YES",
+            "LINKER_DRIVER" : "auto",
+            "MACOSX_DEPLOYMENT_TARGET" : "13.0",
+            "ONLY_ACTIVE_ARCH" : "YES",
+            "OTHER_CFLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "OTHER_LDRFLAGS" : [
+
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SKIP_INSTALL" : "YES",
+            "SPECIALIZATION_SDK_OPTIONS[__platform_filter=macos]" : [
+
+            ],
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ],
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE",
+              "DEBUG"
+            ],
+            "SWIFT_INSTALL_OBJC_HEADER" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "",
+            "SWIFT_OPTIMIZATION_LEVEL" : "-Onone",
+            "TARGETED_DEVICE_FAMILY" : "",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "USE_HEADERMAP" : "NO",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE:demo::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "CLANG_ENABLE_MODULES[__platform_filter=driverkit]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios-maccatalyst]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=ios;ios-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=macos]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=tvos;tvos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=watchos;watchos-simulator]" : "YES",
+            "CLANG_ENABLE_MODULES[__platform_filter=xros;xros-simulator]" : "YES",
+            "CODE_SIGNING_REQUIRED" : "NO",
+            "CODE_SIGN_IDENTITY" : "",
+            "COMPILER_WORKING_DIRECTORY" : "$(WORKSPACE_DIR)",
+            "COPY_PHASE_STRIP" : "YES",
+            "DEBUG_INFORMATION_FORMAT" : "dwarf-with-dsym",
+            "DEPLOYMENT_POSTPROCESSING" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=driverkit]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios-maccatalyst]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=ios;ios-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=macos]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=tvos;tvos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=watchos;watchos-simulator]" : "@rpath",
+            "DYLIB_INSTALL_NAME_BASE[__platform_filter=xros;xros-simulator]" : "@rpath",
+            "ENABLE_TESTING_SEARCH_PATHS" : "YES",
+            "ENTITLEMENTS_REQUIRED" : "NO",
+            "GCC_OPTIMIZATION_LEVEL" : "s",
+            "GCC_PREPROCESSOR_DEFINITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE"
+            ],
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "KEEP_PRIVATE_EXTERNS" : "NO",
+            "LIBTOOL_NO_WARNING_FOR_NO_SYMBOLS" : "YES",
+            "LINKER_DRIVER" : "auto",
+            "MACOSX_DEPLOYMENT_TARGET" : "13.0",
+            "OTHER_CFLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "OTHER_LDRFLAGS" : [
+
+            ],
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-DXcode"
+            ],
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SKIP_INSTALL" : "YES",
+            "SPECIALIZATION_SDK_OPTIONS[__platform_filter=macos]" : [
+
+            ],
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ],
+            "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : [
+              "$(inherited)",
+              "SWIFT_PACKAGE"
+            ],
+            "SWIFT_INSTALL_OBJC_HEADER" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "",
+            "SWIFT_OPTIMIZATION_LEVEL" : "-Owholemodule",
+            "TARGETED_DEVICE_FAMILY" : "",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "USE_HEADERMAP" : "NO",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE:demo::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "defaultConfigurationName" : "Release",
+      "groupTree" : {
+        "children" : [
+          {
+            "children" : [
+
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_0",
+            "name" : "AdditionalFiles",
+            "path" : "/",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_1",
+            "name" : "Binaries",
+            "path" : "/",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_2::REF_0",
+                "name" : "main.swift",
+                "path" : "main.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_2",
+            "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/ArabicDemo",
+            "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/ArabicDemo",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_3::REF_0",
+                "name" : "main.swift",
+                "path" : "main.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_3",
+            "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/ArabicDemo",
+            "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/ArabicDemo",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_4::REF_0",
+                "name" : "ArabicFontImpl.c",
+                "path" : "ArabicFontImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_4::REF_1",
+                "name" : "ArabicRendererImpl.c",
+                "path" : "ArabicRendererImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_4::REF_2",
+                "name" : "ArabicShaperImpl.c",
+                "path" : "ArabicShaperImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_4::REF_3",
+                "name" : "demoFont.c",
+                "path" : "demoFont.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "file",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_4::REF_4",
+                "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h",
+                "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h",
+                "sourceTree" : "<absolute>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_4",
+            "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime",
+            "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_5::REF_0",
+                "name" : "ArabicFontImpl.c",
+                "path" : "ArabicFontImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_5::REF_1",
+                "name" : "ArabicRendererImpl.c",
+                "path" : "ArabicRendererImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_5::REF_2",
+                "name" : "ArabicShaperImpl.c",
+                "path" : "ArabicShaperImpl.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.c.c",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_5::REF_3",
+                "name" : "demoFont.c",
+                "path" : "demoFont.c",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "file",
+                "guid" : "PACKAGE:demo::MAINGROUP::REF_5::REF_4",
+                "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h",
+                "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h",
+                "sourceTree" : "<absolute>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:demo::MAINGROUP::REF_5",
+            "name" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime",
+            "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          }
+        ],
+        "guid" : "PACKAGE:demo::MAINGROUP",
+        "name" : "",
+        "path" : "",
+        "sourceTree" : "<group>",
+        "type" : "group"
+      },
+      "guid" : "PACKAGE:demo",
+      "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Package.swift",
+      "projectDirectory" : "/Users/felix/Gits/ArabicBitmapRenderer/demo",
+      "projectIsPackage" : "true",
+      "projectName" : "ArabicDemo",
+      "targets" : [
+        "4318806872b0bb722fc53d8dc0251b707ebb39ba04d0005eab2d5b6f9bd60501",
+        "31de8425609311f327467d2068d36e869cd8b0decfc3961d22b23fbdf792de0d",
+        "cdfe2d8831818d2f37c629dd1a21665a8e46f9e24db78ecc6efe98220ffb9e36",
+        "c69a31baa3876982d4861f484e671daca12e2033ee6c78bf75a8ea5cf9362b57",
+        "61b76e4c8d712924d182ac45819f01829527181341835ee370ec5e5cb91fdcd3"
+      ]
+    },
+    "signature" : "a24e3e0cee311bd8c752651e84539941c1e1a7c39ac381ade45dfc73eb1f839a",
+    "type" : "project"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "13.0",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "ArabicDemo_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.ArabicDemo",
+            "PRODUCT_MODULE_NAME" : "ArabicDemo",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "YES",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "NO",
+            "SWIFT_PACKAGE_NAME" : "demo",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TARGET_NAME" : "ArabicDemo",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "13.0",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "ArabicDemo_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.ArabicDemo",
+            "PRODUCT_MODULE_NAME" : "ArabicDemo",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "YES",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "NO",
+            "SWIFT_PACKAGE_NAME" : "demo",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TARGET_NAME" : "ArabicDemo",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_2::REF_0",
+              "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:CArabicRuntime"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:CArabicRuntime",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo",
+      "name" : "ArabicDemo-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool",
+      "type" : "standard"
+    },
+    "signature" : "4318806872b0bb722fc53d8dc0251b707ebb39ba04d0005eab2d5b6f9bd60501",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module ArabicDemo {\nheader \"ArabicDemo-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/ArabicDemo.modulemap",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "ArabicDemo_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.ArabicDemo",
+            "PRODUCT_MODULE_NAME" : "ArabicDemo",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "YES",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "ArabicDemo-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "demo",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "ArabicDemo",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "ArabicDemo-50E8AB69F0FE13D1-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/ArabicDemo.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module ArabicDemo {\nheader \"ArabicDemo-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/ArabicDemo.modulemap",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "ArabicDemo_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.ArabicDemo",
+            "PRODUCT_MODULE_NAME" : "ArabicDemo",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "YES",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "NO",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "ArabicDemo-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "demo",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "ArabicDemo",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/ArabicDemo.symbolgraphs",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "ArabicDemo-50E8AB69F0FE13D1-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/ArabicDemo.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_3::REF_0",
+              "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:CArabicRuntime",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable",
+      "name" : "ArabicDemo",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.common.object",
+      "type" : "standard"
+    },
+    "signature" : "31de8425609311f327467d2068d36e869cd8b0decfc3961d22b23fbdf792de0d",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "HEADER_SEARCH_PATHS" : [
+              "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+              "$(inherited)"
+            ],
+            "MODULEMAP_FILE_CONTENTS" : "module CArabicRuntime {\numbrella header \"/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.CArabicRuntime",
+            "PRODUCT_MODULE_NAME" : "CArabicRuntime",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "CArabicRuntime",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TARGET_NAME" : "CArabicRuntime",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "HEADER_SEARCH_PATHS" : [
+                "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_SWIFT_FLAGS" : [
+                "-Xcc",
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "HEADER_SEARCH_PATHS" : [
+              "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+              "$(inherited)"
+            ],
+            "MODULEMAP_FILE_CONTENTS" : "module CArabicRuntime {\numbrella header \"/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.CArabicRuntime",
+            "PRODUCT_MODULE_NAME" : "CArabicRuntime",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "CArabicRuntime",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TARGET_NAME" : "CArabicRuntime",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "HEADER_SEARCH_PATHS" : [
+                "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_SWIFT_FLAGS" : [
+                "-Xcc",
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_4::REF_0",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_4::REF_1",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_4::REF_2",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_4::REF_3",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_4::REF_4",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:CArabicRuntime::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.headers"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "dynamicTargetVariantGuid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic",
+      "guid" : "PACKAGE-TARGET:CArabicRuntime",
+      "name" : "CArabicRuntime",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:CArabicRuntime",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.library.static",
+      "type" : "standard"
+    },
+    "signature" : "cdfe2d8831818d2f37c629dd1a21665a8e46f9e24db78ecc6efe98220ffb9e36",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "PACKAGE-PRODUCT:demo-ArabicDemoPackageTests.ArabicDemoPackageTests::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "PACKAGE-PRODUCT:demo-ArabicDemoPackageTests.ArabicDemoPackageTests::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-PRODUCT:demo-ArabicDemoPackageTests.ArabicDemoPackageTests",
+      "name" : "ArabicDemoPackageTests-product",
+      "type" : "aggregate"
+    },
+    "signature" : "61b76e4c8d712924d182ac45819f01829527181341835ee370ec5e5cb91fdcd3",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "HEADER_SEARCH_PATHS" : [
+              "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+              "$(inherited)"
+            ],
+            "MODULEMAP_FILE_CONTENTS" : "module CArabicRuntime {\numbrella header \"/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.CArabicRuntime",
+            "PRODUCT_MODULE_NAME" : "CArabicRuntime",
+            "PRODUCT_NAME" : "CArabicRuntime",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TARGET_NAME" : "CArabicRuntime",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "HEADER_SEARCH_PATHS" : [
+                "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_SWIFT_FLAGS" : [
+                "-Xcc",
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "DOCC_EXTRACT_PROJECT_HEADERS_DOCUMENTATION" : "YES",
+            "EXECUTABLE_PREFIX" : "lib",
+            "EXECUTABLE_PREFIX[__platform_filter=windows-msvc]" : "",
+            "HEADER_SEARCH_PATHS" : [
+              "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+              "$(inherited)"
+            ],
+            "MODULEMAP_FILE_CONTENTS" : "module CArabicRuntime {\numbrella header \"/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include/CArabicRuntime.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "demo.CArabicRuntime",
+            "PRODUCT_MODULE_NAME" : "CArabicRuntime",
+            "PRODUCT_NAME" : "CArabicRuntime",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_VERSION" : "5",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/CArabicRuntime.symbolgraphs",
+            "TARGET_NAME" : "CArabicRuntime",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "HEADER_SEARCH_PATHS" : [
+                "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/include",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ],
+              "OTHER_SWIFT_FLAGS" : [
+                "-Xcc",
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/CArabicRuntime.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_5::REF_0",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_5::REF_1",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_5::REF_2",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_5::REF_3",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:demo::MAINGROUP::REF_5::REF_4",
+              "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.headers"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+
+      ],
+      "guid" : "PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic",
+      "name" : "CArabicRuntime",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:CArabicRuntime--14288E6865335C89-dynamic",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
+      "type" : "standard"
+    },
+    "signature" : "c69a31baa3876982d4861f484e671daca12e2033ee6c78bf75a8ea5cf9362b57",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "YES",
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ]
+          },
+          "guid" : "AGGREGATE::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SKIP_INSTALL" : "YES",
+            "SUPPORTED_PLATFORMS" : [
+              "$(AVAILABLE_PLATFORMS)"
+            ]
+          },
+          "guid" : "AGGREGATE::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "defaultConfigurationName" : "Release",
+      "developmentRegion" : "en",
+      "groupTree" : {
+        "children" : [
+
+        ],
+        "guid" : "AGGREGATE::MAINGROUP",
+        "name" : "",
+        "path" : "",
+        "sourceTree" : "<group>",
+        "type" : "group"
+      },
+      "guid" : "AGGREGATE",
+      "path" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/Package.swift",
+      "projectDirectory" : "/Users/felix/Gits/ArabicBitmapRenderer/demo",
+      "projectIsPackage" : "true",
+      "projectName" : "Aggregate",
+      "targets" : [
+        "ceb35a1d291c07e1843296aaf698baed98eb4c30b3ce76b2410f7031e7fcf2ad",
+        "0d6f03b3e3e2bd3e0094ddb48d4ee50c9f6db1183f0f4f49cc9b7d17375ec433"
+      ]
+    },
+    "signature" : "1bb7e26172efd0a5ca4a5980b97c7ff61fe3b6593f0f8b1125d66c8b56220a1a",
+    "type" : "project"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-INCLUDING-TESTS::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-INCLUDING-TESTS::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:CArabicRuntime",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "ALL-INCLUDING-TESTS",
+      "name" : "AllIncludingTests",
+      "type" : "aggregate"
+    },
+    "signature" : "ceb35a1d291c07e1843296aaf698baed98eb4c30b3ce76b2410f7031e7fcf2ad",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-EXCLUDING-TESTS::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+
+          },
+          "guid" : "ALL-EXCLUDING-TESTS::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-PRODUCT:demo_ArabicDemo.ArabicDemo",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:ArabicDemo-50E8AB69F0FE13D1-testable",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:CArabicRuntime",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "ALL-EXCLUDING-TESTS",
+      "name" : "AllExcludingTests",
+      "type" : "aggregate"
+    },
+    "signature" : "0d6f03b3e3e2bd3e0094ddb48d4ee50c9f6db1183f0f4f49cc9b7d17375ec433",
+    "type" : "target"
+  }
+]
