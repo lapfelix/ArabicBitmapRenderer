@@ -224,6 +224,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSTextFieldDelegate {
         ])
 
         rerender()
+        window.minSize = NSSize(width: 600, height: 400)
+        window.setContentSize(NSSize(width: 1240, height: 960))
+        window.center()
         window.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
 
