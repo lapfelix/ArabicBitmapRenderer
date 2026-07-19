@@ -1,3 +1,8 @@
+<img width="1360" height="500" alt="arabic-hero" src="https://github.com/user-attachments/assets/ff899b7a-fbff-4929-8831-0bd013b4cce2" />
+<img width="2320" height="2290" alt="alphabet-table" src="https://github.com/user-attachments/assets/048f7cce-6dff-477a-a884-187dcef64bc7" />
+<img width="1580" height="720" alt="pangram" src="https://github.com/user-attachments/assets/60b42ef9-2d86-469f-ba3e-9887b7d8414d" />
+
+
 # ArabicBitmapRenderer
 
 Pre-cooked Arabic bitmap font rendering for tiny microcontrollers (RP2040-class),
