@@ -133,9 +133,48 @@ static void reverseRange(uint16_t *a, size_t lo, size_t hi) {  // [lo, hi)
   }
 }
 
-// Logical -> visual assuming RTL base: mirror neutrals resolved RTL,
-// reverse everything, then un-reverse LTR-resolved segments.
-static void toVisual(uint16_t *a, size_t n) {
+// LTR base: mirror neutrals resolved RTL, then reverse RTL-resolved segments.
+static void toVisualLtr(uint16_t *a, size_t n) {
+  size_t i = 0;
+  int prev = D_L;
+  while (i < n) {
+    int d = dirOf(a[i]);
+    if (d != D_N) { prev = d; i++; continue; }
+    size_t j = i;
+    while (j < n && dirOf(a[j]) == D_N) j++;
+    int next = (j < n) ? dirOf(a[j]) : D_L;
+    if (prev == D_R && next == D_R)
+      for (size_t k = i; k < j; k++) a[k] = mirrorCp(a[k]);
+    i = j;
+  }
+  i = 0;
+  prev = D_L;
+  size_t seg = NONE;
+  while (i < n) {
+    int res;
+    size_t j;
+    int d = dirOf(a[i]);
+    if (d != D_N) { res = d; j = i + 1; prev = d; }
+    else {
+      j = i;
+      while (j < n && dirOf(a[j]) == D_N) j++;
+      int next = (j < n) ? dirOf(a[j]) : D_L;
+      res = (prev == D_R && next == D_R) ? D_R : D_L;
+    }
+    if (res == D_R) {
+      if (seg == NONE) seg = i;
+    } else if (seg != NONE) {
+      reverseRange(a, seg, i);
+      seg = NONE;
+    }
+    i = j;
+  }
+  if (seg != NONE) reverseRange(a, seg, n);
+}
+
+// RTL base: mirror neutrals resolved RTL, reverse everything, then
+// un-reverse LTR-resolved segments.
+static void toVisualRtl(uint16_t *a, size_t n) {
   size_t i = 0;
   int prev = D_R;
   while (i < n) {
@@ -172,6 +211,16 @@ static void toVisual(uint16_t *a, size_t n) {
     i = j;
   }
   if (seg != NONE) reverseRange(a, seg, n);
+}
+
+// Base direction from the first strong character (UAX#9 P2/P3), LTR default.
+static void toVisual(uint16_t *a, size_t n) {
+  for (size_t i = 0; i < n; i++) {
+    int d = dirOf(a[i]);
+    if (d == D_R) { toVisualRtl(a, n); return; }
+    if (d == D_L) break;
+  }
+  toVisualLtr(a, n);
 }
 
 // ---- joining state machine ----

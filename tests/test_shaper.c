@@ -92,11 +92,28 @@ int main(void) {
              (const uint16_t[]){0x064E, 0xFE90, 0x064E, 0xFE98, 0x064E, 0xFEDB},
              6);
 
-  // Mixed direction: RTL base -> first logical run rightmost
+  // Mixed direction: first strong char is Latin -> LTR base
   checkShape("mixed", "ABC مرحبا 123", 0,
-             (const uint16_t[]){'1', '2', '3', ' ', 0xFE8E, 0xFE92, 0xFEA3,
-                                0xFEAE, 0xFEE3, ' ', 'A', 'B', 'C'},
+             (const uint16_t[]){'A', 'B', 'C', ' ', 0xFE8E, 0xFE92, 0xFEA3,
+                                0xFEAE, 0xFEE3, ' ', '1', '2', '3'},
              13);
+
+  // Mixed direction: first strong char is Arabic -> RTL base
+  checkShape("mixed-rtl", "مرحبا ABC", 0,
+             (const uint16_t[]){'A', 'B', 'C', ' ', 0xFE8E, 0xFE92, 0xFEA3,
+                                0xFEAE, 0xFEE3},
+             9);
+
+  // LTR base: neutrals stay in place, no mirroring
+  checkShape("ltr-parens", "Ab (10)", 0,
+             (const uint16_t[]){'A', 'b', ' ', '(', '1', '0', ')'}, 7);
+
+  // RTL base: trailing parenthesized number moves to the visual left,
+  // parens mirrored back to balanced order
+  checkShape("rtl-parens", "مرحبا (98)", 0,
+             (const uint16_t[]){'(', '9', '8', ')', ' ', 0xFE8E, 0xFE92,
+                                0xFEA3, 0xFEAE, 0xFEE3},
+             10);
 
   // ZWNJ breaks a join, is not output
   checkShape("zwnj", "ب\xE2\x80\x8Cب", 0,
@@ -136,8 +153,8 @@ int main(void) {
 
   // Invalid UTF-8 -> '?'
   checkShape("bad-cont", "\x80", 0, (const uint16_t[]){'?'}, 1);
-  checkShape("truncated", "a\xC3", 0, (const uint16_t[]){'?', 'a'}, 2);
-  checkShape("bad-lead", "\xFFz", 0, (const uint16_t[]){'z', '?'}, 2);
+  checkShape("truncated", "a\xC3", 0, (const uint16_t[]){'a', '?'}, 2);
+  checkShape("bad-lead", "\xFFz", 0, (const uint16_t[]){'?', 'z'}, 2);
   checkShape("overlong", "\xC0\xAF", 0, (const uint16_t[]){'?'}, 1);
 
   // Capacity truncation
