@@ -7,8 +7,8 @@
 #include "../src/ArabicShaper.h"
 
 #if defined(__has_include)
-#if __has_include("../src/generated/ArabicFontData.h")
-#include "../src/generated/ArabicFontData.h"
+#if __has_include("../src/generated/NaskhArabic18Font.h")
+#include "../src/generated/NaskhArabic18Font.h"
 #define HAVE_FONT 1
 #endif
 #endif
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
 
 #ifdef HAVE_FONT
 #ifndef ARABIC_DEMO_FONT
-#define ARABIC_DEMO_FONT arabicFont  // expected generated symbol
+#define ARABIC_DEMO_FONT naskhArabic18Font
 #endif
   const ArabicFont *font = &ARABIC_DEMO_FONT;
   uint16_t w = arabicMeasure(font, shaped, n);
