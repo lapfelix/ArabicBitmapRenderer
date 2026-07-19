@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/ArabicDemo-50E8AB69F0FE13D1-testable-primary.dia",
+    "emit-module-dependencies" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/ArabicDemo-50E8AB69F0FE13D1-testable-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/ArabicDemo-50E8AB69F0FE13D1-testable-primary-emit-module.dia",
+    "pch" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/ArabicDemo-50E8AB69F0FE13D1-testable-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/ArabicDemo-50E8AB69F0FE13D1-testable-primary.swiftdeps"
+  },
+  "/Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/ArabicDemo/main.swift" : {
+    "const-values" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ArabicDemo.build/Debug/ArabicDemo-50E8AB69F0FE13D1-testable-t.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}

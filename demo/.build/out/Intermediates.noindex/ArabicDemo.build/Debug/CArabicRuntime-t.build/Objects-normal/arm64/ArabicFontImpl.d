@@ -1,0 +1,7 @@
+dependencies: \
+  /Applications/Xcode-27-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/SDKSettings.json \
+  /Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/ArabicFontImpl.c \
+  /Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/../../../src/ArabicFont.c \
+  /Users/felix/Gits/ArabicBitmapRenderer/demo/Sources/CArabicRuntime/../../../src/ArabicFont.h \
+  /Users/felix/Gits/ArabicBitmapRenderer/demo/.build/out/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdint-DRVN0KNC6L85213M22CW44401.pcm \
+  /Applications/Xcode-27-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/module.modulemap
